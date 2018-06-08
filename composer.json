@@ -1,0 +1,12 @@
+{
+    "authors": [
+        {
+            "name": "Julio",
+            "email": "vanzelliver@gmail.com"
+        }
+    ],
+    "require": {
+        "bramus/router": "1.1",
+        "twig/twig": "~1.0"
+    }
+}

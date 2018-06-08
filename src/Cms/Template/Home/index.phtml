@@ -1,0 +1,23 @@
+<?php $title = "Home"; ?>
+
+<?php include(__TEMPLATE__.'/layout/header-menu.phtml'); ?>
+
+<script>
+    $('document').ready(function(){
+        
+        $("#deslogar").click( function(){
+            $.ajax({
+                type : 'POST',
+                url  : '/deslogar',
+                data : {},
+                dataType: 'json',
+                success:  function(response) { 
+                	top.location = '/';
+                }
+            });
+        });
+    
+    });
+</script>
+
+<?php include(__TEMPLATE__.'/layout/footer.phtml'); ?>
